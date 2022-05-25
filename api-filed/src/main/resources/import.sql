@@ -1,0 +1,1 @@
+INSERT INTO main.field(field_id, created_at, field_direction, field_hour_value, field_name, field_player_capacity, field_type, updated_at)VALUES ('8258c274-bfd4-4cbe-9aca-4ed1daae0b4a', '2022-05-24T15:07:28.279+00:00', 'Ocaña Barrio la primavera', '20000', 'La Primavera', '10', 'Futbol Sala', '2022-05-24T15:07:28.279+00:00');

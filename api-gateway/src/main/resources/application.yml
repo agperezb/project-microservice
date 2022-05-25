@@ -1,0 +1,23 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: api_user
+          uri: lb://user
+          predicates:
+            - Path=/api_user/**
+        - id: api_field
+          uri: lb://field
+          predicates:
+            - Path=/api_field/**
+        - id: api_order
+          uri: lb://order
+          predicates:
+            - Path=/api_order/**

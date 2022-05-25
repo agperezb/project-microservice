@@ -1,0 +1,19 @@
+server:
+  port: 8086
+  servlet:
+    context-path: /api_field
+spring:
+  application:
+    name: field
+  datasource:
+    password: admin
+    url: jdbc:postgresql://localhost:5432/db_api_field
+    username: postgres
+  jpa:
+    database: POSTGRESQL
+    generate-ddl: true
+    hibernate.ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
